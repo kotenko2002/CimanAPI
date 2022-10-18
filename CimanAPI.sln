@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CimanAPI", "CimanAPI\CimanAPI.csproj", "{21600022-F64C-41E7-8ECE-265B286473D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CimanAPI", "CimanAPI\CimanAPI.csproj", "{21600022-F64C-41E7-8ECE-265B286473D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{27FEC0BF-DEBC-4FB7-9F48-32E524612F3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{43FB08E3-CDC9-4481-A2C9-8986CA30CD2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Libraries\Entities\Entities.csproj", "{CCAB5F45-9250-40B8-943C-52FB8A7F37AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Libraries\Service\Service.csproj", "{D8A6EE2D-CC36-4964-B51A-6416D7E8395F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Libraries\Storage\Storage.csproj", "{C7899F8B-C7ED-482D-B710-3841ADD7E81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сommon", "Libraries\Сommon\Сommon.csproj", "{B78CB0FA-CAB4-4F73-B398-15E3A2439863}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,32 @@ Global
 		{21600022-F64C-41E7-8ECE-265B286473D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21600022-F64C-41E7-8ECE-265B286473D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21600022-F64C-41E7-8ECE-265B286473D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAB5F45-9250-40B8-943C-52FB8A7F37AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAB5F45-9250-40B8-943C-52FB8A7F37AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAB5F45-9250-40B8-943C-52FB8A7F37AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAB5F45-9250-40B8-943C-52FB8A7F37AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A6EE2D-CC36-4964-B51A-6416D7E8395F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A6EE2D-CC36-4964-B51A-6416D7E8395F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A6EE2D-CC36-4964-B51A-6416D7E8395F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A6EE2D-CC36-4964-B51A-6416D7E8395F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7899F8B-C7ED-482D-B710-3841ADD7E81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7899F8B-C7ED-482D-B710-3841ADD7E81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7899F8B-C7ED-482D-B710-3841ADD7E81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7899F8B-C7ED-482D-B710-3841ADD7E81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78CB0FA-CAB4-4F73-B398-15E3A2439863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78CB0FA-CAB4-4F73-B398-15E3A2439863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78CB0FA-CAB4-4F73-B398-15E3A2439863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78CB0FA-CAB4-4F73-B398-15E3A2439863}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21600022-F64C-41E7-8ECE-265B286473D3} = {27FEC0BF-DEBC-4FB7-9F48-32E524612F3A}
+		{CCAB5F45-9250-40B8-943C-52FB8A7F37AD} = {43FB08E3-CDC9-4481-A2C9-8986CA30CD2A}
+		{D8A6EE2D-CC36-4964-B51A-6416D7E8395F} = {43FB08E3-CDC9-4481-A2C9-8986CA30CD2A}
+		{C7899F8B-C7ED-482D-B710-3841ADD7E81C} = {43FB08E3-CDC9-4481-A2C9-8986CA30CD2A}
+		{B78CB0FA-CAB4-4F73-B398-15E3A2439863} = {43FB08E3-CDC9-4481-A2C9-8986CA30CD2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE1BA06C-35DF-4C21-BDF1-DA1BF3950A6E}

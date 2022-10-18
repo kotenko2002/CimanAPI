@@ -8,4 +8,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Libraries\Service\Service.csproj" />
+    <ProjectReference Include="..\Libraries\Сommon\Сommon.csproj" />
+  </ItemGroup>
+
 </Project>
