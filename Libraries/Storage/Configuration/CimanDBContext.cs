@@ -1,4 +1,5 @@
-﻿using Entities.Companies;
+﻿using Entities.Areas;
+using Entities.Companies;
 using Microsoft.EntityFrameworkCore;
 
 namespace Storage.Configuration
@@ -11,5 +12,6 @@ namespace Storage.Configuration
         }
 
         public DbSet<Company> Companies { get; set; }
+        public DbSet<Area> Areas { get; set; }
     }
 }

@@ -1,10 +1,9 @@
-﻿using Entities.Areas;
-using System.Collections.Generic;
+﻿using Entities.Companies;
 using System.ComponentModel.DataAnnotations;
 
-namespace Entities.Companies
+namespace Entities.Areas
 {
-    public class Company : BaseEntity<int>
+    public class Area : BaseEntity<int>
     {
         [Required]
         public string Name { get; set; }
@@ -12,7 +11,9 @@ namespace Entities.Companies
         public string Login { get; set; }
         [Required]
         public string Password { get; set; }
-        public virtual ICollection<Area> Areas { get; set; }
+        [Required]
+        public int CompanyId { get; set; }
 
+        public virtual Company Company { get; set; }
     }
 }
